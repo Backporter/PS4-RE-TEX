@@ -14,4 +14,4 @@ Put all the requirements in the Data Folder, extract the mod with the textures, 
 * For Optimal Peformance, Use the mipmaping option(i've included batch files that enable the mipmaping automaticlly just load them).
 
 # TO DO:
-~~Add proper Mip support(hopfully this will be in version 2.0)~~ ~~**Done**~~ **BROKEN** for the time being. **DO NOT USE IT**
+Add proper Mip support(hopfully this will be in version 2.0) **Done** - Should be correctly working as of now
