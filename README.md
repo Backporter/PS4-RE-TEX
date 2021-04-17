@@ -3,8 +3,11 @@ PS4 RE texture creator.
 # Requirements
 
 orbis-image2gnf.exe
+
 libSceTextureTool.dll
+
 libSceGpuAddress.dll
+
 libSceGnm.dll
 
 # Usage:
@@ -14,4 +17,6 @@ Put all the requirements in the Data Folder, extract the mod with the textures, 
 * For Optimal Peformance, Use the mipmaping option(i've included batch files that enable the mipmaping automaticlly just load them).
 
 # TO DO:
-~~Add proper Mip support(hopfully this will be in version 2.0) **Done** - Should be correctly working as of now~~ BROKEN AGAIN.. DO NOT USE.
+~~Add proper Mip support(hopfully this will be in version 2.0) **Done** - Should be correctly working as of now~~ 
+
+BROKEN AGAIN.. DO NOT USE.
