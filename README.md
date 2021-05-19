@@ -13,6 +13,8 @@ libSceGnm.dll
 # Usage:
 Put all the requirements in the Data Folder, extract the mod with the textures, run app, wait for it to close, and you are done. if you want mipmapping boot the app with -mm for mip-mapping to be enabled;
 
+# [Video Tutorial](https://youtu.be/RUMiRqHjaqg)
+
 # Notes
 * For Optimal Peformance, Use the mipmaping option(i've included batch files that enable the mipmaping automaticlly just load them).
 
