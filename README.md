@@ -1,24 +1,18 @@
-# PS4-RE-TEX
-PS4 RE texture creator.
-# Requirements
+## PS4-RE-TEX
+A tool that converts PC textures used in RE-Engine games to the console equivalent format.
 
-orbis-image2gnf.exe
-
-libSceTextureTool.dll
-
-libSceGpuAddress.dll
-
-libSceGnm.dll
+## Requirements
+orbis-image2gnf.exe, libSceTextureTool.dll, libSceGpuAddress.dll, libSceGnm.dll
 
 # Usage:
-Put all the requirements in the Data Folder, extract the mod with the textures, run app, wait for it to close, and you are done. if you want mipmapping boot the app with -mm for mip-mapping to be enabled;
+Copy the requirements in place, copy the natives folder to the root directory and run PS4-RE-TEX.exe once it's done, it will automaticlly close when done.
 
-# [Video Tutorial](https://youtu.be/RUMiRqHjaqg)
+# Video Tutorial showing tool usage
+ * https://youtu.be/RUMiRqHjaqg - Backporter 
 
 # Notes
-* For Optimal Peformance, Use the mipmaping option(i've included batch files that enable the mipmaping automaticlly just load them).
+* For optimal game peformance you would ideally use mips, as of now, mips are not suported.
+* to enable mipmaps you need to run the app with -UMM otherwise the app will default to no mipmapping
 
 # TO DO:
-~~Add proper Mip support(hopfully this will be in version 2.0) **Done** - Should be correctly working as of now~~ 
-
-BROKEN AGAIN.. DO NOT USE.
+Add Proper Mip-Mapping support(not sure what Mips are?, refer to https://en.wikipedia.org/wiki/Mipmap)
