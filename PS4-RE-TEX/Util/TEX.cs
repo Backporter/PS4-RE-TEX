@@ -76,7 +76,7 @@ namespace PS4_RE_TEX
         
         public static ulong GenerateMIPStartOffset(int a_texVersion, int a_mipCount)
         {
-            if (a_texVersion == 30 || a_texVersion == 28)
+            if (a_texVersion == 30 || a_texVersion == 28 || a_texVersion == 0x8896115)
             {
                 return (ulong)(40 + (a_mipCount * 16));
             }
@@ -127,10 +127,10 @@ namespace PS4_RE_TEX
                 s_tex.Unk1E             = br.ReadByte();
                 s_tex.Unk1F             = br.ReadByte();
                 
-                if (s_tex.Version == 30 || s_tex.Version == 28)
+                if (s_tex.Version == 30 || s_tex.Version == 28 || s_tex.Version == 0x8896115)
                 {
-                    s_tex.Unk20 = br.ReadInt64();
-                    s_tex.MipCount    = (s_tex.Unk0F / 16);
+                    s_tex.Unk20     = br.ReadInt64();
+                    s_tex.MipCount  = (s_tex.Unk0F / 16);
                 }
                 else
                 {
@@ -166,7 +166,7 @@ namespace PS4_RE_TEX
                 bw.Write(a_tex.Unk0C);
                 bw.Write(a_tex.Unk0D);
 
-                if (a_tex.Version == 30 || a_tex.Version == 28)
+                if (a_tex.Version == 30 || a_tex.Version == 28 || a_tex.Version == 0x8896115)
                 {
                     bw.Write(a_tex.Unk0E);
                     bw.Write((byte)16); // 1 mipmap = 1 * sizeof(MIP)
@@ -184,7 +184,7 @@ namespace PS4_RE_TEX
                 bw.Write(a_tex.Unk1E);
                 bw.Write(a_tex.Unk1F);
 
-                if (a_tex.Version == 30 || a_tex.Version == 28)
+                if (a_tex.Version == 30 || a_tex.Version == 28 || a_tex.Version == 0x8896115)
                 {
                     bw.Write(a_tex.Unk20);
                     bw.Write(GenerateMIPStartOffset(a_tex.Version, 1));
